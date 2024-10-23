@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nike Jordan - Promo Sepatu</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <div class="logo">
+          <h1>Nike</h1>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="content">
+        <h1>Nike Jordan<br />Take 5 PF</h1>
+        <p>Melangkah Gaya, Percaya Diri Sepanjang Hari!</p>
+        <button onclick="alert('Thank you for your interest!')">Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="/Assets/Images/sepatu4.png" alt="Nike Jordan Take 5 PF" />
+      </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="features" id="collection">
+      <h2>Our Best Collection</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <img src="/Assets/Images/ariforce-removebg-preview.png" alt="Nike Air Force 1" />
+          <h3>Nike Air Force 1</h3>
+        </div>
+        <div class="feature-item">
+          <img src="/Assets/Images/AIR+JORDAN+1+RETRO+LOW+OG-removebg-preview.png" alt="Air Jordan 1 Low OG" />
+          <h3>Air Jordan 1 Low OG</h3>
+        </div>
+        <div class="feature-item">
+          <img src="/Assets/Images/dunkretro-removebg-preview.png" alt="Nike Dunk Low Retro" />
+          <h3>Nike Dunk Low Retro</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-item">
+          <p>"Sepatu ini sangat nyaman dan stylish. Saya pakai setiap hari!"</p>
+          <h4>- Andi, Jakarta</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"Nike Jordan adalah pilihan terbaik untuk olahraga dan santai!"</p>
+          <h4>- Sarah, Bandung</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"Dari kualitas hingga desain, semuanya sempurna."</p>
+          <h4>- Kevin, Surabaya</h4>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 Nike Inc. All rights reserved. | <a href="#about">About Us</a></p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

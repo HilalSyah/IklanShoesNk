@@ -1,0 +1,178 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset dan pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #27374D;
+    color: whitesmoke;
+    overflow-x: hidden;
+  }
+  
+  /* Styling navbar */
+  .navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 10rem; /* Sesuai dengan ukuran yang diinginkan */
+    background-color: #1a2537;
+  }
+  
+  .navbar .logo h1 {
+    color: #ff4500;
+  }
+  
+  .navbar nav ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    margin-right: 2.5rem;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #ff4500;
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .navbar nav {
+      padding: 1.5rem; /* Sesuaikan padding untuk layar kecil */
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li {
+      margin-bottom: 1rem;
+    }
+  }
+  
+
+.contact {
+    background-color: #1e3a59;
+    color: whitesmoke;
+    padding: 4rem 10rem;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 3rem;
+    color: #ff4500;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  
+  .contact-form {
+    flex: 1;
+    background-color: #27374d;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2537;
+    color: whitesmoke;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: 2px solid #ff4500;
+  }
+  
+  .contact-form button {
+    background-color: #ff4500;
+    color: whitesmoke;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff7043;
+  }
+  
+  .contact-info {
+    flex: 1;
+    background-color: #27374d;
+    padding: 2rem;
+    border-radius: 10px;
+    color: whitesmoke;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff4500;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-info a {
+    color: #ff4500;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .contact {
+      padding: 2rem;
+    }
+  }
+  

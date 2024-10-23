@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #27374D;
+    color: whitesmoke;
+    overflow-x: hidden;
+  }
+  
+  .navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 10rem;
+    background-color: #1a2537;
+  }
+  
+  .navbar .logo h1 {
+    color: #ff4500;
+  }
+  
+  .navbar nav ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    margin-right: 2.5rem;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #ff4500;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+    background-color: #1e3a59;
+    min-height: 90vh;
+  }
+  
+  .hero .content {
+    max-width: 50%;
+  }
+  
+  .hero h1 {
+    font-size: 4.5rem;
+    color: #ff4500;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    color: whitesmoke;
+  }
+  
+  .hero button {
+    background-color: #ff4500;
+    color: whitesmoke;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: #ff7043;
+  }
+  
+  .hero .image img {
+    width: 550px;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .features {
+    text-align: center;
+    padding: 3rem 10rem;
+    background-color: #202f47;
+  }
+  
+  .features h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ff4500;
+  }
+  
+  .feature-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .feature-item {
+    width: 30%;
+    background-color: #1a2537;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a2537;
+  }
+  
+  footer p {
+    color: #a0aec0;
+  }
+  
+  footer a {
+    color: #ff4500;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar nav {
+      padding: 1.5rem;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .hero .content {
+      max-width: 100%;
+    }
+  
+    .hero .image {
+      margin-top: 2rem;
+    }
+  
+    .features {
+      padding: 2rem;
+    }
+  
+    .feature-grid {
+      flex-direction: column;
+    }
+  
+    .feature-item {
+      margin-bottom: 2rem;
+    }
+    
+  }
+  
+  .testimonials {
+    padding: 4rem 10rem;
+    background-color: #1e3a59;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 3rem;
+    color: #ff4500;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .testimonials h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background-color: #ff4500;
+    border-radius: 5px;
+  }
+  
+  .testimonial-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-item {
+    background-color: #1a2537;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .testimonial-item p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .testimonial-item h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ff7043;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .testimonial-item {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .testimonial-item {
+      width: 45%;
+    }
+  }
